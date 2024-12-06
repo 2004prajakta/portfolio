@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+  }
+  
+  header .header-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header .profile-photo {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 5px solid white;
+  }
+  
+  header .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  header .btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #ff758c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  header .btn:hover {
+    background-color: #ff7eb3;
+    color: white;
+  }
+  
+  /* Marquee Effect */
+  .marquee-section {
+    background-color: #ff758c;
+    padding: 10px 0;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee-animation 15s linear infinite;
+  }
+  
+  @keyframes marquee-animation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Tabs Section */
+  #tabs {
+    padding: 60px 20px;
+  }
+  
+  .tabs-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .tab-btn {
+    padding: 15px 30px;
+    background: #ff758c;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .tab-btn:hover {
+    background: #ff7eb3;
+  }
+  
+  .tab-btn.active {
+    background: #2575fc;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .project {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    color: #ff758c;
+  }
+  
+  .project p {
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
